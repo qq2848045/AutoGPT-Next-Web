@@ -10,7 +10,7 @@ One-Click to deploy well-designed AutoGPT-Next-Web web UI on Vercel.
 
 [Demo](https://auto-agentgpt.com) / [Issues](https://github.com/Dogtiti/AutoGPT-Next-Web/issues) / [Join Discord](https://discord.gg/Xnsbhg6Uvd) / [Buy Me a Coffee](https://www.buymeacoffee.com/elricliu)
 
-[演示](https://auto-agentgpt.com/) / [反馈](https://github.com/Dogtiti/AutoGPT-Next-Web/issues) / [QQ 群](https://user-images.githubusercontent.com/38354472/232797111-d34a81b0-2739-4251-82b6-6093dc0eb0b6.png) / [微信](https://user-images.githubusercontent.com/38354472/232797309-9348f3a6-1dd7-422a-ad01-935247b1970e.png) / [打赏开发者](https://user-images.githubusercontent.com/38354472/232796654-c749602b-c1d4-402b-8c31-e7c013b7a42d.png)
+[演示](https://auto-agentgpt.com/) / [反馈](https://github.com/Dogtiti/AutoGPT-Next-Web/issues) / [QQ频道](https://github.com/Dogtiti/AutoGPT-Next-Web/assets/38354472/fa0e85db-4419-42c1-8257-f6b2007c9db7) / [微信](https://user-images.githubusercontent.com/38354472/232797309-9348f3a6-1dd7-422a-ad01-935247b1970e.png) / [打赏开发者](https://user-images.githubusercontent.com/38354472/232796654-c749602b-c1d4-402b-8c31-e7c013b7a42d.png)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FDogtiti%2FAutoGPT-Next-Web&env=OPENAI_API_KEY&project-name=autogpt-next-web&repository-name=AutoGPT-Next-Web)
 
@@ -20,7 +20,7 @@ One-Click to deploy well-designed AutoGPT-Next-Web web UI on Vercel.
 
 ## Discuss with us
 
-![cover](https://user-images.githubusercontent.com/20209191/234480921-0a8f754e-1110-47bf-9c40-25e3daed2c05.png)
+![cover](https://github.com/Dogtiti/AutoGPT-Next-Web/assets/38354472/a3f6012f-854f-497d-9090-ecaeb102682f)
 
 ## 特点
 
@@ -39,11 +39,13 @@ One-Click to deploy well-designed AutoGPT-Next-Web web UI on Vercel.
 - [ ] 5. 增加微信登录支持
 
 ## 商业愿景
+
 在维护开源项目的期间，很多朋友前来咨询关于定制系统的事宜。考虑到可能有更多有类似需求的朋友，我们决定启动商业版本的内部测试计划
-* 计划支持 -
-用户登录系统、计费系统、收费系统等，使每个人都可以直接部署一个收费版本的AutoGPT，并直接获得收入。
-* 参与方式 -
-要预定商业版并查看商业版计划的详情，请单击下面的链接[AutoGPT-Next-Web商业愿景](https://egqz2y6eul.feishu.cn/docx/PxoMd7LGfoobAixiuWacxRWQnNd)。
+
+- 计划支持 -
+  用户登录系统、计费系统、收费系统等，使每个人都可以直接部署一个收费版本的 AutoGPT，并直接获得收入。
+- 参与方式 -
+  要预定商业版并查看商业版计划的详情，请单击下面的链接[AutoGPT-Next-Web 商业愿景](https://egqz2y6eul.feishu.cn/docx/PxoMd7LGfoobAixiuWacxRWQnNd)。
 
 ## 常见问题
 
@@ -66,7 +68,7 @@ A：项目源自于 AgentGPT，我们目标是持续输出对国内用户友好�
 使用 Docker 是在本地运行 AutoGPT-Next-Web 最简单的方法。
 
 ```bash
-docker-compose -f docker-compose-local.yml up -d --remove-orphans
+docker-compose -f docker-compose.dev.yml up -d --remove-orphans
 ```
 
 ### Docker-Image
@@ -74,7 +76,7 @@ docker-compose -f docker-compose-local.yml up -d --remove-orphans
 使用 `docker-image` 部署
 
 ```bash
-docker-compose up -d --remove-orphans
+docker-compose -f docker-compose.prod.yml up -d --remove-orphans
 ```
 
 ### 本地开发环境配置

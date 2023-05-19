@@ -10,7 +10,7 @@ One-Click to deploy well-designed AutoGPT-Next-Web web UI on Vercel.
 
 [Demo](https://auto-agentgpt.com/) / [Issues](https://github.com/Dogtiti/AutoGPT-Next-Web/issues) / [Join Discord](https://discord.gg/Xnsbhg6Uvd) / [Buy Me a Coffee](https://www.buymeacoffee.com/elricliu)
 
-[演示](https://auto-agentgpt.com/) / [反馈](https://github.com/Dogtiti/AutoGPT-Next-Web/issues) / [QQ 群](https://user-images.githubusercontent.com/38354472/232797111-d34a81b0-2739-4251-82b6-6093dc0eb0b6.png) / [微信](https://user-images.githubusercontent.com/38354472/232797309-9348f3a6-1dd7-422a-ad01-935247b1970e.png) / [打赏开发者](https://user-images.githubusercontent.com/38354472/232796654-c749602b-c1d4-402b-8c31-e7c013b7a42d.png)
+[演示](https://auto-agentgpt.com/) / [反馈](https://github.com/Dogtiti/AutoGPT-Next-Web/issues) / [QQ频道](https://github.com/Dogtiti/AutoGPT-Next-Web/assets/38354472/fa0e85db-4419-42c1-8257-f6b2007c9db7) / [微信](https://user-images.githubusercontent.com/38354472/232797309-9348f3a6-1dd7-422a-ad01-935247b1970e.png) / [打赏开发者](https://user-images.githubusercontent.com/38354472/232796654-c749602b-c1d4-402b-8c31-e7c013b7a42d.png)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FDogtiti%2FAutoGPT-Next-Web&env=OPENAI_API_KEY&project-name=autogpt-next-web&repository-name=AutoGPT-Next-Web)
 
@@ -20,7 +20,7 @@ One-Click to deploy well-designed AutoGPT-Next-Web web UI on Vercel.
 
 ## Discuss with us
 
-![cover](https://user-images.githubusercontent.com/20209191/234480921-0a8f754e-1110-47bf-9c40-25e3daed2c05.png)
+![cover](https://github.com/Dogtiti/AutoGPT-Next-Web/assets/38354472/a3f6012f-854f-497d-9090-ecaeb102682f)
 
 ## Features
 
@@ -39,11 +39,13 @@ One-Click to deploy well-designed AutoGPT-Next-Web web UI on Vercel.
 - [ ] 5. Add support for WeChat login
 
 ## Business Version
-During the period of maintaining open source projects, many friends came to consult about customizing the system. Considering that there may be more friends who have similar needs, we decided to start the internal test plan of the commercial version~ 
-* plan support -
-User login system, billing system, charging system, etc., so that everyone can directly deploy a charged version of AutoGPT, and can directly obtain income 
-* way of participation -
-To pre-order the commercial version and view the details of the commercial version plan, please click the link below [AutoGPT-Next-Web Business Vision](https://egqz2y6eul.feishu.cn/docx/PxoMd7LGfoobAixiuWacxRWQnNd)
+
+During the period of maintaining open source projects, many friends came to consult about customizing the system. Considering that there may be more friends who have similar needs, we decided to start the internal test plan of the commercial version~
+
+- plan support -
+  User login system, billing system, charging system, etc., so that everyone can directly deploy a charged version of AutoGPT, and can directly obtain income
+- way of participation -
+  To pre-order the commercial version and view the details of the commercial version plan, please click the link below [AutoGPT-Next-Web Business Vision](https://egqz2y6eul.feishu.cn/docx/PxoMd7LGfoobAixiuWacxRWQnNd)
 
 ## Get Started
 
@@ -66,7 +68,7 @@ A: The project originated from AgentGPT. Our goal is to continuously provide use
 The easiest way to run AutoGPT-Next-Web locally is by using docker.
 
 ```bash
- docker-compose -f docker-compose-local.yml up -d --remove-orphans
+ docker-compose -f docker-compose.dev.yml up -d --remove-orphans
 ```
 
 ### Docker-Image
@@ -74,7 +76,7 @@ The easiest way to run AutoGPT-Next-Web locally is by using docker.
 Using `docker-image`
 
 ```bash
-docker-compose up -d --remove-orphans
+docker-compose  -f docker-compose.prod.yml up -d --remove-orphans
 ```
 
 ### Local Development Setup

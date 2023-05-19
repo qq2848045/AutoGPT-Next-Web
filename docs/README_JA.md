@@ -10,7 +10,7 @@
 
 [デモ](https://auto-agentgpt.com/) / [Issues](https://github.com/Dogtiti/AutoGPT-Next-Web/issues) / [Discord に参加](https://discord.gg/Xnsbhg6Uvd) / [コーヒーを買う](https://www.buymeacoffee.com/elricliu)
 
-[演示](https://auto-agentgpt.com/) / [反馈](https://github.com/Dogtiti/AutoGPT-Next-Web/issues) / [QQ 群](https://user-images.githubusercontent.com/38354472/232797111-d34a81b0-2739-4251-82b6-6093dc0eb0b6.png) / [微信](https://user-images.githubusercontent.com/38354472/232797309-9348f3a6-1dd7-422a-ad01-935247b1970e.png) / [打赏开发者](https://user-images.githubusercontent.com/38354472/232796654-c749602b-c1d4-402b-8c31-e7c013b7a42d.png)
+[演示](https://auto-agentgpt.com/) / [反馈](https://github.com/Dogtiti/AutoGPT-Next-Web/issues) / [QQ频道](https://github.com/Dogtiti/AutoGPT-Next-Web/assets/38354472/fa0e85db-4419-42c1-8257-f6b2007c9db7) / [微信](https://user-images.githubusercontent.com/38354472/232797309-9348f3a6-1dd7-422a-ad01-935247b1970e.png) / [打赏开发者](https://user-images.githubusercontent.com/38354472/232796654-c749602b-c1d4-402b-8c31-e7c013b7a42d.png)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FDogtiti%2FAutoGPT-Next-Web&env=OPENAI_API_KEY&project-name=autogpt-next-web&repository-name=AutoGPT-Next-Web)
 
@@ -20,11 +20,11 @@
 
 ## 私たちと話し合う
 
-![cover](https://user-images.githubusercontent.com/20209191/234480921-0a8f754e-1110-47bf-9c40-25e3daed2c05.png)
+![cover](https://github.com/Dogtiti/AutoGPT-Next-Web/assets/38354472/a3f6012f-854f-497d-9090-ecaeb102682f)
 
 ## 特徴
 
-1. Vercel を使ったワンクリックの無料デプロイメントが1分で完了
+1. Vercel を使ったワンクリックの無料デプロイメントが 1 分で完了
 2. 現地での対応力を向上させました： 中国語で入力すると、英語ではなく中国語で内容が表示
 3. AgentGPT に合わせた UI 設計、レスポンシブデザイン、ダークモードへの対応
 4. 独自ドメインをお持ちですか？バインド後、障壁なくどこでもすぐにアクセスできるのがさらに良い
@@ -39,11 +39,13 @@
 - [ ] 5. WeChat のログインに対応
 
 ## ビジネスバージョン
+
 オープンソースプロジェクトを維持する期間中、多くの友人がシステムのカスタマイズについて相談に来ました。類似のニーズを持つ友人がより多くいる可能性があることを考慮して、商用版の内部テスト計画を開始することにしました〜
-* 計画サポート -
-ユーザーログインシステム、請求システム、課金システムなどをサポートし、誰でも直接有料版のAutoGPTを展開し、収入を直接獲得することができます。
-* 参加方法 -
-商業版を事前予約し、商業版計画の詳細を見るには、以下のリンク[AutoGPT-Next-Webビジネスビジョン](https://egqz2y6eul.feishu.cn/docx/PxoMd7LGfoobAixiuWacxRWQnNd)。
+
+- 計画サポート -
+  ユーザーログインシステム、請求システム、課金システムなどをサポートし、誰でも直接有料版の AutoGPT を展開し、収入を直接獲得することができます。
+- 参加方法 -
+  商業版を事前予約し、商業版計画の詳細を見るには、以下のリンク[AutoGPT-Next-Web ビジネスビジョン](https://egqz2y6eul.feishu.cn/docx/PxoMd7LGfoobAixiuWacxRWQnNd)。
 
 ## はじめに
 
@@ -67,15 +69,15 @@ AutoGPT-Next-Web をローカルで実行する最も簡単な方法は、docker
 便利なセットアップスクリプトが提供されているので、ぜひお試しください。
 
 ```bash
-./setup.sh --docker
+docker-compose -f docker-compose.dev.yml up -d --remove-orphans
 ```
 
-### Docker-compose
+### Docker-Image
 
-`docker-compose` デプロイを使用
+`docker-image` デプロイを使用
 
 ```bash
-./setup.sh --docker-compose
+docker-compose  -f docker-compose.prod.yml up -d --remove-orphans
 ```
 
 ### ローカル開発セットアップ
@@ -126,7 +128,7 @@ DATABASE_URL=file:./db.sqlite
 OPENAI_API_KEY=''
 ```
 
-5. sqliteを使用するためにprismaスキーマを変更:
+5. sqlite を使用するために prisma スキーマを変更:
 
 ```bash
 ./prisma/useSqlite.sh
